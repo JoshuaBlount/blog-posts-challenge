@@ -31,7 +31,6 @@ function closeServer() {
     server.close(err => {
       if (err) {
         reject(err);
-        // so we don't also call `resolve()`
         return;
       }
       resolve();
@@ -44,7 +43,3 @@ if (require.main === module) {
 }
 
 module.exports = { app, runServer, closeServer };
-
-app.listen(process.env.port || 8080, () => {
-  console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
-});
