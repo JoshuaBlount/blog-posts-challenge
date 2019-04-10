@@ -1,18 +1,22 @@
 {
   "name": "blog-api-challenge",
   "version": "1.0.0",
-  "description": "blog-api",
-  "main": "model.js",
+  "description": "Shopping list app to demo 'the modern classic'",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.4",
+    "mongoose": "^5.4.19",
     "morgan": "^1.9.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "faker": "^4.1.0",
     "mocha": "^6.0.2"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit",
     "start": "node server.js"
   },
   "author": "",
